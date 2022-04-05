@@ -6,7 +6,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Desktop 3/KiiBod/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
+        <entry key="..\:/Desktop 3/KiiBod/app/src/main/res/drawable/ic_baseline_music_note.xml" value="0.1425925925925926" />
+        <entry key="..\:/Desktop 3/KiiBod/app/src/main/res/drawable/ic_baseline_music_note_24.xml" value="0.2703125" />
+        <entry key="..\:/Desktop 3/KiiBod/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/ziinc/Desktop/KiiBod/app/src/main/res/layout/activity_main.xml" value="0.25416666666666665" />
       </map>
     </option>

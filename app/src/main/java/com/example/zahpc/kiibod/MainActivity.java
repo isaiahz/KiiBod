@@ -6,9 +6,13 @@ import android.media.MediaRecorder;
 import android.media.SoundPool;
 import android.os.Build;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
+import androidx.core.graphics.drawable.DrawableCompat;
+
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.RadioButton;
 
 import com.thekhaeng.pushdownanim.PushDownAnim;
@@ -35,6 +39,8 @@ public class MainActivity extends AppCompatActivity {
             comb_one, comb_two, comb_three, comb_four, comb_five, comb_six, comb_seven, comb_eight;
 
     RadioButton marimba, hamonica, comb, piano, record;
+
+    ImageView imageView, imageView2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -95,6 +101,8 @@ public class MainActivity extends AppCompatActivity {
         hamonica = (RadioButton) findViewById(R.id.radio_hamonica);
         comb = (RadioButton) findViewById(R.id.radio_comb);
         piano = (RadioButton) findViewById(R.id.radio_piano);
+        imageView=findViewById(R.id.imageView);
+        imageView2=findViewById(R.id.imageView2);
 
 
         piano.setChecked(true);
@@ -107,6 +115,8 @@ public class MainActivity extends AppCompatActivity {
                 .setInterpolatorRelease( PushDownAnim.DEFAULT_INTERPOLATOR ).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                DrawableCompat.setTint(imageView.getDrawable(),ContextCompat.getColor(getApplicationContext(), R.color.colorAccent));
+                DrawableCompat.setTint(imageView2.getDrawable(),ContextCompat.getColor(getApplicationContext(), R.color.colorAccent));
                 if (piano.isChecked()) {
                     soundPool.play(sound_one, 1, 1, 0, 0, 1);
                 }
@@ -134,6 +144,8 @@ public class MainActivity extends AppCompatActivity {
                 .setInterpolatorRelease( PushDownAnim.DEFAULT_INTERPOLATOR ).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                DrawableCompat.setTint(imageView.getDrawable(),ContextCompat.getColor(getApplicationContext(), R.color.colorDarkGreen));
+                DrawableCompat.setTint(imageView2.getDrawable(),ContextCompat.getColor(getApplicationContext(), R.color.colorDarkGreen));
                 if (piano.isChecked()) {
                     soundPool.play(sound_two, 1, 1, 0, 0, 1);
                 }
@@ -161,6 +173,8 @@ public class MainActivity extends AppCompatActivity {
                 .setInterpolatorRelease( PushDownAnim.DEFAULT_INTERPOLATOR ).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                DrawableCompat.setTint(imageView.getDrawable(),ContextCompat.getColor(getApplicationContext(), R.color.colorRed));
+                DrawableCompat.setTint(imageView2.getDrawable(),ContextCompat.getColor(getApplicationContext(), R.color.colorRed));
                 if (piano.isChecked()) {
                     soundPool.play(sound_three, 1, 1, 0, 0, 1);
                 }
@@ -188,6 +202,8 @@ public class MainActivity extends AppCompatActivity {
                 .setInterpolatorRelease( PushDownAnim.DEFAULT_INTERPOLATOR ).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                DrawableCompat.setTint(imageView.getDrawable(),ContextCompat.getColor(getApplicationContext(), R.color.colorYellow));
+                DrawableCompat.setTint(imageView2.getDrawable(),ContextCompat.getColor(getApplicationContext(), R.color.colorYellow));
                 if (piano.isChecked()) {
                     soundPool.play(sound_four, 1, 1, 0, 0, 1);
                 }
@@ -215,6 +231,8 @@ public class MainActivity extends AppCompatActivity {
                 .setInterpolatorRelease( PushDownAnim.DEFAULT_INTERPOLATOR ).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                DrawableCompat.setTint(imageView.getDrawable(),ContextCompat.getColor(getApplicationContext(), R.color.colorPurple));
+                DrawableCompat.setTint(imageView2.getDrawable(),ContextCompat.getColor(getApplicationContext(), R.color.colorPurple));
                 if (piano.isChecked()) {
                     soundPool.play(sound_five, 1, 1, 0, 0, 1);
                 }
@@ -242,6 +260,8 @@ public class MainActivity extends AppCompatActivity {
                 .setInterpolatorRelease( PushDownAnim.DEFAULT_INTERPOLATOR ).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                DrawableCompat.setTint(imageView.getDrawable(),ContextCompat.getColor(getApplicationContext(), R.color.colorGrey));
+                DrawableCompat.setTint(imageView2.getDrawable(),ContextCompat.getColor(getApplicationContext(), R.color.colorGrey));
                 if (piano.isChecked()) {
                     soundPool.play(sound_six, 1, 1, 0, 0, 1);
                 }
@@ -269,6 +289,8 @@ public class MainActivity extends AppCompatActivity {
                 .setInterpolatorRelease( PushDownAnim.DEFAULT_INTERPOLATOR ).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                DrawableCompat.setTint(imageView.getDrawable(),ContextCompat.getColor(getApplicationContext(), R.color.colorMaroon));
+                DrawableCompat.setTint(imageView2.getDrawable(),ContextCompat.getColor(getApplicationContext(), R.color.colorMaroon));
                 if (piano.isChecked()) {
                     soundPool.play(sound_seven, 1, 1, 0, 0, 1);
                 }
@@ -296,6 +318,8 @@ public class MainActivity extends AppCompatActivity {
                 .setInterpolatorRelease( PushDownAnim.DEFAULT_INTERPOLATOR ).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                DrawableCompat.setTint(imageView.getDrawable(),ContextCompat.getColor(getApplicationContext(), R.color.colorBlack));
+                DrawableCompat.setTint(imageView2.getDrawable(),ContextCompat.getColor(getApplicationContext(), R.color.colorBlack));
                 if (piano.isChecked()) {
                     soundPool.play(sound_eight, 1, 1, 0, 0, 1);
                 }
